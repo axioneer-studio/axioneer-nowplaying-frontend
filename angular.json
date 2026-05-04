@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "melodyhue-frontend": {
+    "axioneer-nowplaying-frontend": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -35,8 +35,8 @@
               "allowedHosts": [
                 "localhost",
                 "127.0.0.1",
-                "melodyhue.com",
-                "*.melodyhue.com"
+                "nowplaying.axioneer.com",
+                "*.nowplaying.axioneer.com"
               ]
             },
             "ssr": {
@@ -74,10 +74,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "melodyhue-frontend:build:production"
+              "buildTarget": "axioneer-nowplaying-frontend:build:production"
             },
             "development": {
-              "buildTarget": "melodyhue-frontend:build:development"
+              "buildTarget": "axioneer-nowplaying-frontend:build:development"
             }
           },
           "defaultConfiguration": "development",
@@ -87,7 +87,7 @@
             "allowedHosts": [
               "localhost",
               "127.0.0.1",
-              "dev.melodyhue.com"
+              "dev.nowplaying.axioneer.com"
             ]
           }
         },

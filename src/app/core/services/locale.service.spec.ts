@@ -6,7 +6,7 @@ describe('LocaleService', () => {
   let service: LocaleService;
 
   beforeEach(() => {
-    window.localStorage.removeItem('melodyhue:locale');
+    window.localStorage.removeItem('axioneer-nowplaying:locale');
     TestBed.configureTestingModule({
       providers: [{ provide: PLATFORM_ID, useValue: 'browser' }],
     });
@@ -36,7 +36,7 @@ describe('LocaleService', () => {
     TestBed.flushEffects();
 
     expect(service.locale()).toBe('en');
-    expect(window.localStorage.getItem('melodyhue:locale')).toBe('en');
+    expect(window.localStorage.getItem('axioneer-nowplaying:locale')).toBe('en');
   });
 
   it('should not change locale if already selected', () => {

@@ -18,7 +18,7 @@ export class HomeComponent {
     const locale = this.localeService.locale();
     return {
       hero: {
-        title: locale === 'fr' ? 'MelodyHue' : 'MelodyHue',
+        title: locale === 'fr' ? 'Axioneer NowPlaying' : 'Axioneer NowPlaying',
         subtitle:
           locale === 'fr'
             ? 'Des overlays musicaux pour vos streams'

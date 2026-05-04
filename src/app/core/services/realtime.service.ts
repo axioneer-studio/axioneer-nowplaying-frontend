@@ -135,10 +135,10 @@ export class RealtimeService {
 
   private computeWsUrl(): string {
     // URL WS explicites selon l'URL du front:
-    // - Dev (front sous dev.*):  wss://dev.api.melodyhue.com/ws
-    // - Prod (front sans sous-domaine): wss://api.melodyhue.com/ws
+    // - Dev (front sous dev.*):  wss://dev.api.nowplaying.axioneer.com/ws
+    // - Prod (front sans sous-domaine): wss://api.nowplaying.axioneer.com/ws
     const isDevFront = location.hostname.startsWith('dev.');
-    const wsUrlBase = isDevFront ? 'wss://dev.api.melodyhue.com/ws' : 'wss://api.melodyhue.com/ws';
+    const wsUrlBase = isDevFront ? 'wss://dev.api.nowplaying.axioneer.com/ws' : 'wss://api.nowplaying.axioneer.com/ws';
     let wsUrl = wsUrlBase;
 
     // Ajouter le token si disponible pour fiabiliser l’auth WS entre sous-domaines

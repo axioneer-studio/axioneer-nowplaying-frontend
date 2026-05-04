@@ -1,15 +1,15 @@
 {
-  "name": "melodyhue-frontend",
+  "name": "axioneer-nowplaying-frontend",
   "version": "0.3.5",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "start:prod": "node dist/melodyhue-frontend/server/server.mjs",
+    "start:prod": "node dist/axioneer-nowplaying-frontend/server/server.mjs",
     "build": "ng build",
     "build:prod": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:melodyhue-frontend": "node dist/melodyhue-frontend/server/server.mjs"
+    "serve:ssr:axioneer-nowplaying-frontend": "node dist/axioneer-nowplaying-frontend/server/server.mjs"
   },
   "prettier": {
     "printWidth": 100,
@@ -33,7 +33,7 @@
     "@angular/platform-browser-dynamic": "20.3.19",
     "@angular/platform-server": "20.3.19",
     "@angular/router": "20.3.19",
-    "@angular/ssr": "20.3.19",
+    "@angular/ssr": "^20.3.25",
     "@fortawesome/fontawesome-free": "^7.1.0",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
@@ -43,8 +43,8 @@
     "zone.js": "^0.15.1"
   },
   "devDependencies": {
-    "@angular/build": "20.3.19",
-    "@angular/cli": "20.3.19",
+    "@angular/build": "^20.3.25",
+    "@angular/cli": "^20.3.25",
     "@angular/compiler-cli": "20.3.19",
     "@types/express": "^5.0.3",
     "@types/jasmine": "~5.1.11",

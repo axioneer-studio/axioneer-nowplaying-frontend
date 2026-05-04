@@ -46,7 +46,7 @@ export class GeneralComponent {
     const base = this.origin();
     // Fallback à l'URL publique si rendu SSR
     return base === '#'
-      ? 'https://melodyhue.com/auth/spotify/callback'
+      ? 'https://nowplaying.axioneer.com/auth/spotify/callback'
       : `${base}/auth/spotify/callback`;
   });
   readonly hexInputError = signal<string | null>(null);

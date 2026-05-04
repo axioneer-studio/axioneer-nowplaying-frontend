@@ -39,7 +39,7 @@ interface SidebarItem {
   },
 })
 export class SidebarComponent {
-  private static readonly STORAGE_KEY = 'melodyhue:sidebar:collapsed';
+  private static readonly STORAGE_KEY = 'axioneer-nowplaying:sidebar:collapsed';
 
   private readonly platformId = inject(PLATFORM_ID);
   private readonly isBrowser = isPlatformBrowser(this.platformId);

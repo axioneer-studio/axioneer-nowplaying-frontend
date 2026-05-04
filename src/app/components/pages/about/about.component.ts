@@ -31,15 +31,15 @@ export class AboutComponent {
     const locale = this.localeService.locale();
     return {
       hero: {
-        title: locale === 'fr' ? 'MelodyHue' : 'MelodyHue',
+        title: locale === 'fr' ? 'Axioneer NowPlaying' : 'Axioneer NowPlaying',
         subtitle:
           locale === 'fr'
             ? 'Overlays musicaux temps réel pour streamers'
             : 'Real-time music overlays for streamers',
         description:
           locale === 'fr'
-            ? "MelodyHue est une application d'overlays temps réel pensée pour les streamers, créateurs de contenu et setups audiovisuels. Elle affiche votre musique Spotify en cours avec la couleur dominante de la pochette, à travers plusieurs styles d'overlays élégants et personnalisables, compatibles OBS, XSplit et toute source web."
-            : 'MelodyHue is a real-time overlay application designed for streamers, content creators and audiovisual setups. It displays your current Spotify music with the dominant color from the album art, through multiple elegant and customizable overlay styles, compatible with OBS, XSplit and any web source.',
+            ? "Axioneer NowPlaying est une application d'overlays temps réel pensée pour les streamers, créateurs de contenu et setups audiovisuels. Elle affiche votre musique Spotify en cours avec la couleur dominante de la pochette, à travers plusieurs styles d'overlays élégants et personnalisables, compatibles OBS, XSplit et toute source web."
+            : 'Axioneer NowPlaying is a real-time overlay application designed for streamers, content creators and audiovisual setups. It displays your current Spotify music with the dominant color from the album art, through multiple elegant and customizable overlay styles, compatible with OBS, XSplit and any web source.',
       },
       features: {
         title: locale === 'fr' ? 'Fonctionnalités' : 'Features',
@@ -52,8 +52,8 @@ export class AboutComponent {
             title: locale === 'fr' ? 'Connectez Spotify' : 'Connect Spotify',
             description:
               locale === 'fr'
-                ? 'MelodyHue interroge en temps réel la musique Spotify en cours'
-                : 'MelodyHue queries Spotify in real-time for the current playing track',
+                ? 'Axioneer NowPlaying interroge en temps réel la musique Spotify en cours'
+                : 'Axioneer NowPlaying queries Spotify in real-time for the current playing track',
           },
           {
             number: '2',
@@ -78,8 +78,8 @@ export class AboutComponent {
           locale === 'fr' ? 'Prêt à améliorer vos streams ?' : 'Ready to enhance your streams?',
         description:
           locale === 'fr'
-            ? 'Créez votre compte gratuitement et commencez à utiliser MelodyHue dès maintenant.'
-            : 'Create your free account and start using MelodyHue right now.',
+            ? 'Créez votre compte gratuitement et commencez à utiliser Axioneer NowPlaying dès maintenant.'
+            : 'Create your free account and start using Axioneer NowPlaying right now.',
         button: locale === 'fr' ? 'Créer un compte' : 'Create Account',
       },
     };

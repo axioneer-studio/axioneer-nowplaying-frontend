@@ -3,13 +3,13 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: "${container_name:-melodyhue-frontend}"
+    container_name: "${container_name}"
     restart: unless-stopped
     environment:
       PORT: "3000"
-      API_BASE_URL: "${API_BASE_URL:-https://api.melodyhue.com}"
-      PROXY_FORWARD: "${PROXY_FORWARD:-fetch}"
-      DEBUG_PROXY: "${DEBUG_PROXY:-false}"
+      API_BASE_URL: "${API_BASE_URL}"
+      PROXY_FORWARD: "${PROXY_FORWARD}"
+      DEBUG_PROXY: "${DEBUG_PROXY}"
     networks:
       - dokploy-network
 

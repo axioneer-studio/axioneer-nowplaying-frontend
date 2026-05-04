@@ -14,7 +14,7 @@ describe('NavigationComponent', () => {
 
   beforeEach(async () => {
     // Nettoyer le localStorage avant chaque test pour réinitialiser la locale
-    window.localStorage.removeItem('melodyhue:locale');
+    window.localStorage.removeItem('axioneer-nowplaying:locale');
 
     await TestBed.configureTestingModule({
       imports: [NavigationComponent],
@@ -24,7 +24,7 @@ describe('NavigationComponent', () => {
     documentRef = TestBed.inject(DOCUMENT);
     localeService = TestBed.inject(LocaleService);
     documentRef.documentElement.lang = 'fr';
-    window.localStorage.removeItem('melodyhue:locale');
+    window.localStorage.removeItem('axioneer-nowplaying:locale');
     fixture = TestBed.createComponent(NavigationComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
@@ -49,7 +49,7 @@ describe('NavigationComponent', () => {
 
     expect(component.locale()).toBe('en');
     expect(documentRef.documentElement.lang).toBe('en');
-    expect(window.localStorage.getItem('melodyhue:locale')).toBe('en');
+    expect(window.localStorage.getItem('axioneer-nowplaying:locale')).toBe('en');
   });
 
   it('should render navigation links with localized labels', () => {

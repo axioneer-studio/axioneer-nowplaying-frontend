@@ -44,7 +44,7 @@ export class PrivacyComponent {
           {
             title: '3. Intégration Spotify',
             content:
-              "MelodyHue se connecte à l'API Spotify pour récupérer vos informations de lecture en temps réel. Le client_id (non secret) peut être stocké en clair. Le client_secret et/ou le refresh_token sont chiffrés en base de données. Vous pouvez à tout moment déconnecter Spotify : nous effaçons alors le refresh_token de la base et la session Spotify en mémoire.",
+              "Axioneer NowPlaying se connecte à l'API Spotify pour récupérer vos informations de lecture en temps réel. Le client_id (non secret) peut être stocké en clair. Le client_secret et/ou le refresh_token sont chiffrés en base de données. Vous pouvez à tout moment déconnecter Spotify : nous effaçons alors le refresh_token de la base et la session Spotify en mémoire.",
           },
           {
             title: '4. Partage des informations',
@@ -79,7 +79,7 @@ export class PrivacyComponent {
           {
             title: '10. Contact',
             content:
-              'Pour toute question concernant cette politique de confidentialité, contactez-nous à privacy@melodyhue.com',
+              'Pour toute question concernant cette politique de confidentialité, contactez-nous à privacy@nowplaying.axioneer.com',
           },
         ],
       };
@@ -99,7 +99,7 @@ export class PrivacyComponent {
           {
             title: '3. Spotify Integration',
             content:
-              'MelodyHue connects to the Spotify API to retrieve real-time playback info. The client_id (not a secret) may be stored in plain text. The client_secret and/or refresh_token are encrypted at rest. You can disconnect Spotify at any time; we then clear the refresh_token from the database and reset any in-memory Spotify session.',
+              'Axioneer NowPlaying connects to the Spotify API to retrieve real-time playback info. The client_id (not a secret) may be stored in plain text. The client_secret and/or refresh_token are encrypted at rest. You can disconnect Spotify at any time; we then clear the refresh_token from the database and reset any in-memory Spotify session.',
           },
           {
             title: '4. Information Sharing',
@@ -134,7 +134,7 @@ export class PrivacyComponent {
           {
             title: '10. Contact',
             content:
-              'For any questions regarding this privacy policy, contact us at privacy@melodyhue.com',
+              'For any questions regarding this privacy policy, contact us at privacy@nowplaying.axioneer.com',
           },
         ],
       };

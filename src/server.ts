@@ -15,13 +15,13 @@ const app = express();
 const angularApp = new AngularNodeAppEngine();
 // Base API: surchargée via la variable d'environnement API_BASE_URL.
 // Fallback: même valeur que le front par défaut (développement).
-const API_BASE_RAW = process.env['API_BASE_URL'] || 'https://api.melodyhue.com';
+const API_BASE_RAW = process.env['API_BASE_URL'] || 'https://api.nowplaying.axioneer.com';
 // Normaliser (supprimer slash fin) pour éviter les doubles // dans l’URL cible
 const API_BASE = API_BASE_RAW.replace(/\/+$/, '');
 // Headers communs pour les requêtes upstream
 const UPSTREAM_HEADERS = {
   accept: 'application/json',
-  'user-agent': 'melodyhue-frontend-ssr/1.0',
+  'user-agent': 'axioneer-nowplaying-frontend-ssr/1.0',
 } as const;
 // Mode de forward: 'fetch' (par défaut) ou 'redirect'.
 // Utilisez PROXY_FORWARD=redirect si votre hébergeur bloque les requêtes sortantes.
@@ -364,7 +364,7 @@ app.use((req, res) => {
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Page non trouvée - MelodyHue</title>
+  <title>Page non trouvée - Axioneer NowPlaying</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body { font-family: system-ui, -apple-system, sans-serif; text-align: center; padding: 50px; }
